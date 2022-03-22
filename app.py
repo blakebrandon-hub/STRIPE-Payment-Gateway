@@ -82,7 +82,7 @@ def logout():
 	return redirect(url_for('login'))
 
 @app.route('/', methods=['GET', 'POST'])
-# @login_required
+@login_required
 def index():
 	return render_template('index.html')
 

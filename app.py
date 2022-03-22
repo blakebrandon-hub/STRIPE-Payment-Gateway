@@ -8,7 +8,7 @@ from os import environ
 
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = "secret"
+app.config['SECRET_KEY'] = environ.get('SECRET_KEY')
 app.config['SQLALCHEMY_DATABASE_URI'] = environ.get('DATABASE')
 app.config['STRIPE_PUBLIC_KEY'] = environ.get('STRIPE_PUBLIC_KEY')
 app.config['STRIPE_SECRET_KEY'] = environ.get('STRIPE_SECRET_KEY')

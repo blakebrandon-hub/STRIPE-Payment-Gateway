@@ -113,8 +113,8 @@ def checkout():
 		checkout_session = stripe.checkout.Session.create(
 			line_items = line_items, 
 			mode='payment', 
-			success_url='https://ecomm-api-demo.herokuapp.com/success', 
-			cancel_url='https://ecomm-api-demo.herokuapp.com/cancel',
+			success_url='https://your-store-demo.herokuapp.com/success', 
+			cancel_url='https://your-store-demo.herokuapp.com/cancel',
 		)
 
 	except Exception as e:

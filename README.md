@@ -1,1 +1,1 @@
-# Stripe-Checkout-Demo
+# Stripe-Payment-Gateway
